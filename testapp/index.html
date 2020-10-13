@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+
+        
+    </head>
+    <body>
+
+        <button onclick="loginDjango()">Login via twitter</button>
+        <button onclick="loginDropbox()">Login via dropbox</button>
+
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script src="js/logintest.js"></script>
+        <script>
+
+
+        var login = function(){
+            socialAuthLogin.openPop('https://github.com' + 
+            '/login/oauth/request_token' + 
+            '?client_id=e469a100e5693b4fc728' +
+            '&scope=gist').then(function(res){
+                console.log("here we go", res);
+            });
+        };
+
+        var loginT = function(){
+            socialAuthLogin.openPop("https://www.dropbox.com/1/oauth2/authorize?client_id=lefrbrhy9i4akb4&response_type=token&redirect_uri=http://127.0.0.1:8000/static/hey.html&state=23456")
+        }
+
+
+        var loginDjango = function(){
+            socialAuthLogin.loginDjango("twitter", function(token){
+                console.log("django token is here!", token)
+            }); 
+        }
+
+        var loginDropbox = function(){
+            socialAuthLogin.loginDjango("dropbox-oauth2", function(token){
+                console.log("django token is here!", token)
+            }); 
+        }
+
+
+        </script>
+        
+
+    </body>
+</html>

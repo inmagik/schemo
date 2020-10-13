@@ -1,0 +1,13 @@
+<div class="item item-button-right row bar bar-positive">
+    <h2 class="title">
+        {{fieldSchema.name}}
+    </h2>
+    <button class="button button-clear" ng-click="addArrayItem()">Add</button>
+</div>
+<div class="item" ng-repeat="x in data.fieldModel">
+    <entity-field field-schema="getArraySchema()" field-model="x" ng-if="!schemaArray">
+    </entity-field>
+
+    <entity-form entity-schema="getArraySchema()" entity-model="x" ng-if="schemaArray">
+    </entity-form>
+</div>

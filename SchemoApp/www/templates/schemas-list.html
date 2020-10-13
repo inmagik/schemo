@@ -1,0 +1,33 @@
+<ion-view title="YOUR SCHEMAS">
+    <ion-nav-buttons>
+        <div class="buttons pull-right">
+        <button class="button button-assertive" ui-sref="app.schemas.new">ADD SCHEMA</button>
+        </div>
+    </ion-nav-buttons>
+
+
+  <ion-content class="has-header padding calmback">
+    
+    <div class="container">
+
+        <div class="card padding text-center" ng-if="!schemas" style="padding-top:20px">
+            <h2 class=" droid">
+                No schemas
+            </h2>
+            <button class="button button-dark button-clear">
+                Create one now
+            </button>
+        </div>
+        
+        <div class="padding">
+            <div class="list">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    
+  </ion-content>
+</ion-view>

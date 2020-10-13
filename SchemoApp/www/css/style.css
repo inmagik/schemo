@@ -1,0 +1,59 @@
+/* Empty. Add your own CSS if you like */
+.lightblue{
+    background-color: rgb(200,4,80);
+    background-image: radial-gradient(transparent, rgba(0,0,0,.5));
+}
+
+.calmback{
+    background-color: rgb(255,255,255);
+    background-image: radial-gradient(transparent, rgba(0,50,100,.15));
+
+}
+
+.maintitle{
+    color:white; font-family: 'Henny Penny', cursive; font-size:8em;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, .7);
+}
+
+.tagline{color:#ddd; font-family: 'Droid Sans', sans-serif;}
+
+.lightblue .loginholder {
+    margin-top: 140px;
+
+}
+
+
+.container{
+    width:1024px;
+    margin: 0 auto;
+    display:block;
+}
+
+@media only screen and (max-width:1024px){
+ .container{
+    width:100%;
+ }   
+}
+
+.nav-bar h1{
+font-family: 'Droid Sans', sans-serif;  
+}
+
+.freak{
+    font-family: 'Henny Penny', cursive;
+}
+
+.droid{
+    font-family:  'Droid Sans', sans-serif;  
+}
+
+.lead{
+    font-size:1.5em;
+    font-family:  'Droid Sans', sans-serif;  
+    padding:10px;
+}
+
+.border-crimson{
+    border-bottom: solid 4px crimson;
+    padding-bottom: 4px;
+}

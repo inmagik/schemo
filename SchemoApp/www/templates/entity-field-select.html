@@ -1,0 +1,8 @@
+
+<label class="item item-input item-select">
+    <div class="input-label">
+      {{fieldSchema.name}}
+    </div>
+    <select ng-options="o as o for o in fieldSchema.enum" ng-model="data.fieldModel">
+    </select>
+  </label>

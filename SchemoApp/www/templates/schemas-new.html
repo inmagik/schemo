@@ -1,0 +1,35 @@
+<ion-view title="NEW SCHEMA">
+    
+
+  <ion-content class="has-header padding calmback" ng-init="x={}">
+    
+    <div class="row">
+        <div class="col">
+            <div class="row bar bar-dark item">
+                Entity definition
+            </div>
+            <entity-form entity-schema="entitySchema" entity-model="data.entityModel">
+            </entity-form>
+        </div>
+        <div class="col">
+            <div class="row bar bar-assertive item">
+                Example form
+            </div>
+            <entity-form entity-schema="data.entityModel" entity-model="x">
+            </entity-form>
+        </div>
+
+    </div>
+    <div class="row" >
+        <div class="col">
+            {{ data.entityModel }}
+            
+        </div>
+        <div class="col">
+            {{ x}}
+        </div>
+    </div>
+    
+    
+  </ion-content>
+</ion-view>

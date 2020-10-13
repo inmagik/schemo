@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+        window.onbeforeunload = function() {
+            window.opener.postMessage(window.location.href, '*');
+        };
+        window.close()
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<div>
+    <label class="item">
+        <h2 class="title">
+            {{ entitySchema.name }}
+        </h2>
+        <p>
+            {{ entitySchema.description }}
+        </p>
+    </label>
+
+    <div ng-repeat="property in visibleProperties">
+        
+        <entity-field field-schema="property" field-model="entityModel[property.name]">
+        </entity-field>
+    </div>
+
+</div>

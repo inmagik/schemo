@@ -1,0 +1,40 @@
+<ion-view class="lightblue" title="LOGIN" title-align="right">
+  <ion-content class="padding text-center">
+    <div class="loginholder container">
+
+        <h1 class="maintitle">scHemo</h1>
+        <h4 class="tagline">LIVE YOUR DATA</h4>
+
+        
+            <div class="col">
+    
+                <div class="button-barx">
+                    <button class="button button-dark icon ion-social-dropbox" ng-click="loginDropBox()"></button>
+        
+                    <button class="button button-dark icon ion-social-twitter" ng-click="loginTwitter()"></button>
+
+                    <button class="button button-dark icon ion-social-github" ng-click="loginGithub()"></button>
+
+                </div>
+            </div>
+        
+
+
+
+        
+
+        <div ng-if="!logged">
+
+        
+
+        </div>
+
+        <div ng-if="logged">
+            
+            <p>seems like you are logged in!</p>
+            
+        </div>
+    </div>
+    
+  </ion-content>
+</ion-view>

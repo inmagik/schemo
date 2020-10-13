@@ -1,0 +1,28 @@
+{
+  "name": "ionic-contrib-ios-rounded-buttons",
+  "homepage": "https://github.com/driftyco/ionic-contrib-ios-rounded-buttons",
+  "authors": [
+    "Max Lynch <max@drifty.com>"
+  ],
+  "description": "Simple iOS style rounded buttons that aren't quite square",
+  "main": [
+    "ionic.iosButtons.css"
+  ],
+  "keywords": [
+    "mobile",
+    "html5",
+    "ionic"
+  ],
+  "license": "MIT",
+  "private": false,
+  "_release": "be188778aa",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "be188778aa77603e80d0c23f768dbb564298f953"
+  },
+  "_source": "https://github.com/driftyco/ionic-contrib-ios-rounded-buttons.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/driftyco/ionic-contrib-ios-rounded-buttons.git",
+  "_direct": true
+}

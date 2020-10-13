@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>heaay there!</h1>
+        {{ token }}
+        <script>
+        var target = window.contentWindow || window.opener;
+        window.onbeforeunload = function() {
+            target.postMessage("token:{{ token }}", '*');
+        };
+        window.close()
+        </script>
+
+    </body>
+</html>
